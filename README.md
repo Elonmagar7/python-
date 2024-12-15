@@ -22,5 +22,23 @@ elif operator==5:
     rem=num1%num2
     print("Remaindern = ",rem)
 
+
+# program by Using the Anynomous lambda function inside a function
+
+#Program type-1
+def func(fx,v):
+   return fx(v)
+arb= lambda n:n**3
+n= int(input("Enter any number = "))
+print("The Cube of Entered number is : ",func(arb,n))
+
+#program type-2
+def f(v):
+   return lambda n:n*v
+ar=f(3)
+num=int(input("Enter any number ="))
+print(f"The  3 time  of {num}  = {ar(num)}")
+
+
   
 
